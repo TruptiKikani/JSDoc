@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Vuexy</title>
+    <link rel="icon" href="img/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 right-0 z-[99] border-b-2">
+      <div class="flex items-center justify-between bg-white p-[10px]">
+        <a href="/documatation.html">
+          <div class="flex">
+            <img src="img/logo.svg" alt="" class="max-w-[40px]" />
+            <h1 class="text-xl font-bold ml-4 text-[#8b6af0]">Vuexy</h1>
+          </div>
+        </a>
+        <div class="flex gap-6">
+          <div
+            class="bg-white border flex rounded-full overflow-hidden px-2 hover:border hover:border-purple-500"
+          >
+            <img src="img/search.svg" alt="" />
+            <input
+              type="text"
+              placeholder=""
+              class="border border-none focus:outline-none focus:border-purple-500 focus:ring-sky-500 focus:ring-0"
+            />
+          </div>
+          <ul class="flex cursor-pointer gap-3">
+            <li
+              class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+              onclick="window.location.assign('/welcome.html')"
+            >
+              Guide
+            </li>
+            <li
+              class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+                        onclick="window.location.assign('/FAQ.html')"
+              >
+              FAQ
+            </li>
+            <li
+              class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+                        onclick="window.location.assign('/article.html')"
+              >
+              Articles
+            </li>
+            <div class="flex">
+              <a
+                href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/ecommerce"
+                target="_blank"
+              >
+                <li class="flex font-semibold">
+                  Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg></li
+              ></a>
+            </div>
+            <div class="flex">
+              <a
+                href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599?irgwc=1&clickid=Wc%3AXylTzixyIRWPzK70kXULqUkGQeI1UZ2hDzo0&iradid=275988&irpid=1244113&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1244113&utm_medium=affiliate&utm_source=impact_radius"
+                target="_blank"
+              >
+                <li class="flex font-semibold">
+                  Purchase
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg>
+                </li>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4">
+      <aside
+        class="overflow-y-auto fixed top-0 bottom-0 left-0 bg-white w-[320px] pt-[55px]"
+      >
+        <ul class="pl-5">
+          <li
+            class="text-xl tagparent font-bold text-[#2f4a60] mt-5 cursor-pointer hover:active hover:text-[#8b82f1]"
+            onclick="window.location.assign('/welcome.html')"
+          >
+            Welcome
+          </li>
+
+          <ul class="px-4 mt-2 text-[#6e747a]">
+            <li class="cursor-pointer hover:active hover:text-[#8b82f1]">
+              How to use docs
+            </li>
+            <li class="cursor-pointer hover:active hover:text-[#8b82f1]">
+              Starter-kit
+            </li>
+            <li class="cursor-pointer hover:active hover:text-[#8b82f1]">
+              FAQ
+            </li>
+            <li class="cursor-pointer hover:active hover:text-[#8b82f1]">
+              Getting Support
+            </li>
+          </ul>
+          <p class="text-xl mt-5 font-bold text-[#2f4a60]">Getting Started</p>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="cursor-pointer hover:active hover:text-[#8b82f1] Parent"
+                >
+                  Getting Support
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 hover:active hover:text-[#8b82f1] cursor-pointer"
+                  >
+                    Raising Support Tickets
+                  </li>
+                  <li
+                    class="child px-4 hover:active hover:text-[#8b82f1] cursor-pointer"
+                  >
+                    Support Portal
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li
+              class="px-4 text-[#6e747a] hover:active hover:text-[#8b82f1] cursor-pointer"
+            >
+              GitLab Access
+            </li>
+          </ul>
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Development</li>
+
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Installation
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Guide
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Laravel Installation
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Folder Structure
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Overview
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Main Package
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Theme
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Change Template color
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Routing
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Overview
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Route Meta
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Layout</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Layout Type
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Blank Layout
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Layout component
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Core Layout
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Full Layout
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Vertical component
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Horizontal component
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">component</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Alert
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Alert Structure
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Alert Animation
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Button
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Button Border
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Flat Button
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Relief Button
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Media
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Media List
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Media Bordered
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Model
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Model Themes
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Pagination
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    separated
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Tab
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointerhover:active hover:text-[#8b82f1]"
+                  >
+                    Tab Right
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Tab Left
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Forms</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Input Group
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Merged Input Group
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    VAlidation with Merged Input Group
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Checkbox
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Checkbox color
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </aside>
+
+      <main class="pt-[55px] pl-[305px]">
+        <div class="mx-auto max-w-[815px] py-[2rem] px-[2.5rem]">
+          <h1 class="relative tagParent font-semibold text-4xl">
+            <a
+              href=""
+              class="hover1 absolute right-[100%] text-[#8b6af0] font-bold opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+              >#</a
+            >
+            Getting Support
+          </h1>
+          <p class="text-[#6e747a] mt-8">
+            In this page you will find how to get support and how to raise
+            perfect support ticket to resolve your issues quickly with minimum
+            conversation. We value your time 🕝
+          </p>
+
+          <div class="mt-8 divide-y-2">
+            <h1
+              class="relative tagParent font-semibold text-3xl text-[#2c3e50]"
+            >
+              <a
+                href=""
+                class="hover1 absolute right-[100%] text-[#8b6af0] font-bold opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                style="opacity: 0"
+                >#</a
+              >
+              Raising Support Ticket
+            </h1>
+            <div class="mt-1 text-[#6e747a]">
+              <p class="mt-4 tracking-wide leading-relaxed">
+                Raising support ticket in support portal is as simple as
+                commenting on post. However, If you want get your issues
+                resolved quickly please follow below guide:
+              </p>
+
+              <div class="mt-8 divide-y-2">
+                <h1
+                  class="relative tagParent font-semibold text-2xl text-[#2c3e50]"
+                >
+                  <a
+                    href=""
+                    class="hover1 absolute right-[100%] text-[#8b6af0] font-bold opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                    style="opacity: 0"
+                    >#</a
+                  >
+                  Finding existing solution
+                </h1>
+                <div class="mt-1 text-[#6e747a]">
+                  <p class="mt-4 tracking-wide leading-relaxed">
+                    There might be case that you issue is already resolved and
+                    you are the one who is facing due to some issue. So before
+                    creating new support ticket please search it in our
+                    <a
+                      class="text-[#8b6af0] font-bold cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                      onclick="window.location.assign('/FAQ.html')"
+                      >FAQ page</a
+                    >
+                    where we listed most common questions/issues asked in our
+                    support portal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="/common_guide.js"></script>
+  <!-- <script src="/home_page.js"></script>
+<script src="/getting_support.js"></script> -->
+</html>

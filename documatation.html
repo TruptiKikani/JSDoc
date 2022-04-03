@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vuexy</title>
+    <link rel = "icon" href ="img/logo.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header class="fixed top-0 left-0 right-0 z-[99] border-b-2">
+      <div class="flex items-center justify-between bg-white py-[10px] px-[26px]">
+          <a href="/documatation.html">
+        <div class="flex">
+          <img src="img/logo.svg" alt="" class="max-w-[40px]" />
+          <h1 class="text-xl font-bold ml-4 text-[#8b6af0]">Vuexy</h1>
+        </div>
+        </a>
+        <div class="flex gap-6">
+            <div
+              class="bg-white border flex rounded-full overflow-hidden px-2 hover:border hover:border-purple-500"
+            >
+              <img src="img/search.svg" alt="" />
+              <input
+                type="text"
+                placeholder=""
+                class="border border-none focus:outline-none focus:border-purple-500 focus:ring-sky-500 focus:ring-0"
+              />
+            </div>
+            <ul class="flex cursor-pointer gap-3">
+              <li
+                class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+                onclick="window.location.assign('/welcome.html')"
+              >
+                Guide
+              </li>
+              <li
+                class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+                onclick="window.location.assign('/FAQ.html')"
+              >
+                FAQ
+              </li>
+              <li
+                class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+                                        onclick="window.location.assign('/article.html')">
+                Articles
+              </li>
+              <div class="flex">
+                <a href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/ecommerce" target="_blank">
+                <li class="flex font-semibold">
+                  Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg>
+                </li></a>
+              </div>
+              <div class="flex">
+                <a href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599?irgwc=1&clickid=Wc%3AXylTzixyIRWPzK70kXULqUkGQeI1UZ2hDzo0&iradid=275988&irpid=1244113&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1244113&utm_medium=affiliate&utm_source=impact_radius" target="_blank">
+                <li class="flex font-semibold">
+                  Purchase
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg>
+                </li>
+                </a>
+              </div>
+            </ul>
+          </div>
+      </div>
+    </header>
+
+        <div class="container mx-auto px-72">
+          <div class="flex justify-center mt-[94px]">
+            <img src="img/logo.svg" alt="" class="max-w-[160px]" />
+          </div>
+          <div
+            class="flex justify-center text-5xl font-semibold text-[#2c3e50] mt-10"
+          >
+            <p>Vuexy - Vuejs Admin Dashboard Template</p>
+          </div>
+          <div class="flex justify-center text-2xl text-[#6a8bb3] mt-8">
+            <p>Best selling, Production Ready, Carefully Crafted,</p>
+          </div>
+          <div class="flex justify-center text-2xl text-[#6a8bb3]">
+            <p>Extensive Admin Template</p>
+          </div>
+          <div class="flex justify-center mt-6">
+            <button
+              type="submit"
+              class="flex bg-[#7367f0] rounded p-4 text-white font-semibold text-xl"
+            onclick="window.location.assign('/welcome.html')">
+              Get Started
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                class="ml-2"
+              >
+                <path
+                  fill="#ffffff"
+                  d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <div class="bg-[#ffe6e6] border-l-8 border-[red] mt-8">
+              <div class="mt-4 ml-4 mb-5 mr-2 text-[#901812]">
+                <p class="font-semibold">
+                  Hey! Check this out before going anywhere 📣
+                </p>
+                <p class="mt-5">
+                  This documentation is for
+                  <b class="text-[#6b2d1c]">Bootstrap Vue version(Latest)</b>.If
+                  you want to check documentation for
+                  <b class="text-[#6b2d1c]">Vuesax version (Deprecated)</b>
+                  <br />
+                  please visit
+                  <a class="text-[#30495f] inline-flex font-bold"
+                    >here<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 100 100"
+                      width="15"
+                      height="15"
+                      class="icon outbound mt-[7px]"
+                    >
+                      <path
+                        fill="#b0b0b0"
+                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                      ></path>
+                      <polygon
+                        fill="#b0b0b0"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                      ></polygon></svg></a
+                  >. For
+                  <b class="text-[#6b2d1c]">Vuesax version(Deprecated) Demo</b>
+                  please visit
+                  <a class="text-[#30495f] inline-flex font-bold"
+                    >here<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 100 100"
+                      width="15"
+                      height="15"
+                      class="icon outbound mt-[7px]"
+                    >
+                      <path
+                        fill="#b0b0b0"
+                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                      ></path>
+                      <polygon
+                        fill="#b0b0b0"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                      ></polygon></svg></a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 mt-20">
+            <div>
+              <p class="font-semibold text-xl text-[#3b5269]">
+                Based on BootstrapVue
+              </p>
+              <p class="mt-5 text-[#647a9f]">
+                With BootstrapVue you can build responsive, mobile-first, and
+                ARIA
+                <br />accessible projects on the web
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold text-xl text-[#3b5269]">
+                Composition API
+              </p>
+              <p class="mt-5 text-[#647a9f]">
+                Composition API is a set of additive, function-based APIs that
+                allow flexible composition of component logic.
+              </p>
+            </div>
+            <div>
+              <p class="font-semibold text-xl text-[#3b5269]">
+                JWT Auth, ACL, etc.
+              </p>
+
+              <p class="mt-5 text-[#647a9f]">
+                Vuexy provides extendable JWT auth <br />which can be configured
+                easily and <br />provides ready to use ACL
+              </p>
+            </div>
+          </div>
+          <div class="flex justify-center mt-16 mb-10 text-[#647a9f]">
+            COPYRIGHT © 2021 Pixinvent, All rights Reserved
+          </div>
+        </div>
+      </div>
+    
+  </body>
+
+  <!-- <script src="/home_page.js"></script> -->
+</html>

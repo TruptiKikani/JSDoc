@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Vuexy</title>
+    <link rel="icon" href="img/logo.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="Header fixed top-0 left-0 right-0 z-[99] border-b-2">
+      <div
+        class="flex items-center justify-between bg-white py-[10px] px-[26px]"
+      >
+          <a href="/documatation.html">
+        <div class="flex">
+          <img src="img/logo.svg" alt="" class="max-w-[40px]" />
+          <h1 class="text-xl font-bold ml-4 text-[#8b6af0]">Vuexy</h1>
+        </div>
+        </a>
+        <div class="flex gap-6">
+          <div
+            class="bg-white border flex rounded-full overflow-hidden px-2 hover:border hover:border-purple-500"
+          >
+            <img src="img/search.svg" alt="" />
+            <input
+              type="text"
+              placeholder=""
+              class="border border-none focus:outline-none focus:border-purple-500 focus:ring-sky-500 focus:ring-0"
+            />
+          </div>
+          <ul class="flex cursor-pointer gap-3">
+            <li class="font-semibold border-b-2 border-purple-500">Guide</li>
+            <li
+              class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+              onclick="window.location.assign('/FAQ.html')"
+            >
+              FAQ
+            </li>
+            <li
+              class="font-semibold transition duration-150 border-b-2 border-transparent hover:border-purple-500"
+              onclick="window.location.assign('/article.html')"
+            >
+              Articles
+            </li>
+            <div class="flex">
+              <a
+                href="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/dashboard/ecommerce"
+                target="_blank"
+              >
+                <li class="flex font-semibold">
+                  Demo
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg></li
+              ></a>
+            </div>
+            <div class="flex">
+              <a
+                href="https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599?irgwc=1&clickid=Wc%3AXylTzixyIRWPzK70kXULqUkGQeI1UZ2hDzo0&iradid=275988&irpid=1244113&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1244113&utm_medium=affiliate&utm_source=impact_radius"
+                target="_blank"
+              >
+                <li class="flex font-semibold">
+                  Purchase
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px] ml-1"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon>
+                  </svg>
+                </li>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto px-4">
+      <aside
+        class="overflow-y-auto fixed top-0 bottom-0 left-0 bg-white w-[320px] pt-[55px]"
+      >
+        <ul class="pl-5">
+          <li
+            class="text-xl tagparent font-bold text-[#2f4a60] mt-5 cursor-pointer hover:active hover:text-[#8b82f1]"
+          >
+            Welcome
+          </li>
+
+          <ul class="px-4 mt-2 text-[#6e747a]">
+            <li id="howTo" class="SCROLL cursor-pointer hover:active hover:text-[#8b82f1]">
+              How to use docs
+            </li>
+            <li id="FAQ" class="SCROLL cursor-pointer hover:active hover:text-[#8b82f1]">
+              FAQ
+            </li>
+            <li id="kit" class="SCROLL cursor-pointer hover:active hover:text-[#8b82f1]">
+              Starter-kit 
+            </li>
+
+            <li id="support" class="SCROLL cursor-pointer hover:active hover:text-[#8b82f1]">
+              Getting Support
+            </li>
+          </ul>
+          <p class="text-xl mt-5 font-bold text-[#2f4a60]">Getting Started</p>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="cursor-pointer hover:active hover:text-[#8b82f1] Parent"
+                onclick="window.location.assign('/getting_support.html')">
+                  Getting Support
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 hover:active hover:text-[#8b82f1] cursor-pointer"
+                  >
+                    Raising Support Tickets
+                  </li>
+                  <li
+                    class="child px-4 hover:active hover:text-[#8b82f1] cursor-pointer"
+                  >
+                    Support Portal
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li
+              class="px-4 text-[#6e747a] hover:active hover:text-[#8b82f1] cursor-pointer"
+            >
+              GitLab Access
+            </li>
+          </ul>
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Development</li>
+
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Installation
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Guide
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Laravel Installation
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Folder Structure
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Overview
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Main Package
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Theme
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Change Template color
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Routing
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Overview
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Route Meta
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Layout</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Layout Type
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Blank Layout
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Layout component
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Core Layout
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Full Layout
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Vertical component
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Horizontal component
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">component</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 mt-2 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Alert
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Alert Structure
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Alert Animation
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Button
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Button Border
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Flat Button
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Relief Button
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Media
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Media List
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Media Bordered
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Model
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Model Themes
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Pagination
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    separated
+                  </li>
+                </ul>
+              </ul>
+            </li>
+
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Tab
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointerhover:active hover:text-[#8b82f1]"
+                  >
+                    Tab Right
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Tab Left
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+
+          <li class="text-xl mt-5 font-bold text-[#2f4a60]">Forms</li>
+          <ul>
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Input Group
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Merged Input Group
+                  </li>
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    VAlidation with Merged Input Group
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <ul id="subList" class="px-4 text-[#6e747a]">
+                <li
+                  class="Parent cursor-pointer hover:active hover:text-[#8b82f1]"
+                >
+                  Checkbox
+                </li>
+                <ul style="display: none">
+                  <li
+                    class="child px-4 cursor-pointer hover:active hover:text-[#8b82f1]"
+                  >
+                    Checkbox color
+                  </li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+        </ul>
+      </aside>
+
+      <main class="pt-[55px] pl-[305px]">
+        <div class="mx-auto max-w-[815px] py-[2rem] px-[2.5rem]">
+          <h1 class="relative tagParent font-semibold text-4xl">
+            <a
+              href=""
+              class="hover1 absolute right-[100%] text-[#8b6af0] font-bold opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+              >#</a
+            >
+            Welcome
+          </h1>
+          <p class="text-[#6e747a] mt-8">
+            Thanks for purchasing our template 🙂. Let's get you up and running.
+          </p>
+
+          <div class="bg-[#ffe6e6] border-l-8 border-[red]">
+            <div class="mt-4 ml-4 text-[#901812] pt-4 pb-4">
+              <p class="font-semibold">
+                Hey! Check this out before going anywhere 📣
+              </p>
+              <p class="mt-5">
+                This documentation is for
+                <b class="text-[#6b2d1c]">Bootstrap Vue version(Latest)</b>.If
+                you want to check documentation for
+                <b class="text-[#6b2d1c]">Vuesax version (Deprecated)</b>
+                <br />
+                please visit
+                <a class="text-[#30495f] inline-flex font-bold"
+                  >here<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px]"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon></svg></a
+                >. For
+                <b class="text-[#6b2d1c]">Vuesax version(Deprecated) Demo</b>
+                please visit
+                <a class="text-[#30495f] inline-flex font-bold"
+                  >here<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 100 100"
+                    width="15"
+                    height="15"
+                    class="icon outbound mt-[7px]"
+                  >
+                    <path
+                      fill="#b0b0b0"
+                      d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                    ></path>
+                    <polygon
+                      fill="#b0b0b0"
+                      points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                    ></polygon></svg></a>
+              </p>
+            </div>
+          </div>
+
+          <div class="howTo mt-8 divide-y-2">
+            <h1 class="relative tagParent font-semibold text-2xl">
+              <a
+                href=""
+                class="hover1 absolute right-[100%] text-[#8b6af0] font-bold opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                style="opacity: 0"
+                >#</a
+              >
+              How to use docs
+            </h1>
+            <div class="mt-1 text-[#6e747a]">
+              <p class="mt-4 tracking-wide leading-relaxed">
+                This is docs for Vuexy BootstrapVue version. In this
+                documentation you will find new features, components,
+                composition functions, etc provided by our template other than
+                BootstrapVue.
+              </p>
+
+              <div class="bg-[#f3f5f7] border-l-8 border-[#42b983] mt-8">
+                <div class="ml-4">
+                  <p class="font-semibold mt-5 pt-[20px]">TIP</p>
+                  <p class="mt-2 pb-[20px]">
+                    You can find BootstrapVue component's docs at their official
+                    <a class="text-[#776df0] inline-flex"
+                      >documentation<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        focusable="false"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 100 100"
+                        width="15"
+                        height="15"
+                        class="icon outbound mt-[7px]"
+                      >
+                        <path
+                          fill="#b0b0b0"
+                          d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"
+                        ></path>
+                        <polygon
+                          fill="#b0b0b0"
+                          points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"
+                        ></polygon>
+                      </svg> </a
+                    >.
+                  </p>
+                </div>
+              </div>
+              <p class="mt-4 tracking-wide leading-relaxed">
+                Let's install your project first, please visit
+                <a
+                  class="text-[#8b6af0] font-bold cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                  >installation</a
+                >
+                page for detailed guide on how to install and run vuexy.
+              </p>
+              <p class="mt-4 tracking-wide leading-relaxed">
+                To get started you can check our new improved
+                <a
+                  class="text-[#8b6af0] font-bold cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                  >folder Structure</a
+                >
+                of our template to understand how it works.
+              </p>
+              <p class="mt-4 tracking-wide leading-relaxed">
+                Next, certainly you want to create new pages and want to get
+                started with your project, For this you can check our
+                <a
+                  class="text-[#8b6af0] font-bold cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                  >Layout docs</a
+                >
+                to understand how to use them. Certainly, default layout is
+                zero-config layout but still if you want to understand each
+                layout types, Go for it.
+              </p>
+            </div>
+          </div>
+
+          <div class="FAQ mt-8 divide-y-2">
+            <h1 class="relative tagParent font-semibold text-2xl">
+              <a
+                href=""
+                class="hover1 absolute right-[100%] text-[#8b6af0] opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                style="opacity: 0"
+                >#</a
+              >
+              FAQ
+            </h1>
+            <div class="mt-1 text-[#6e747a]">
+              <p class="mt-4 tracking-wide leading-relaxed">
+                We created list of common
+                <a
+                  class="text-[#8b6af0] font-bold cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                  onclick="window.location.assign('/FAQ.html')"
+                  >FAQs</a
+                >
+                which developers ask while using our template. So it is good
+                idea to check for our FAQ if you have any query.
+              </p>
+            </div>
+          </div>
+
+          <div class="kit mt-8 divide-y-2">
+            <h1 class="relative tagParent font-semibold text-2xl">
+              <a
+                href=""
+                class="hover1 absolute right-[100%] font-bold text-[#8b6af0] opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                style="opacity: 0"
+                >#</a
+              >
+              Starter-kit
+            </h1>
+            <div class="mt-1 text-[#6e747a]">
+              <p class="mt-4 tracking-wide leading-relaxed">
+                Starter-kit is minimal template from where you can start your
+                project quickly instead of removing stuff which isn't needed.
+                Below is quick notes on starter-kit:
+              </p>
+              <ul class="pl-6 mt-4">
+                <li class="list-disc">No Auth</li>
+                <li class="list-disc">No ACL</li>
+                <li class="list-disc">No i18n</li>
+                <li class="list-disc">Simple Navbar</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="support mt-8 divide-y-2">
+            <h1 class="relative tagParent font-semibold text-2xl">
+              <a
+                href=""
+                class="hover1 absolute right-[100%] font-bold text-[#8b6af0] opacity-0 transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                style="opacity: 0"
+                >#</a
+              >
+              Getting Support
+            </h1>
+            <div class="mt-1 text-[#6e747a]">
+              <p class="mt-4 tracking-wide leading-relaxed">
+                If you have any question related to our template feel free to
+                raise support ticket at our support portal. Please check our
+                guide on
+                <a
+                  class="font-bold text-[#8b6af0] cursor-pointer transition duration-150 border-b-2 border-transparent hover:border-[#8b6af0]"
+                  >how to create perfect support ticket</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="/common_guide.js"></script>
+  <!-- <script src="/home_page.js"></script> -->
+  <!-- <script src="/welcome.js"></script> -->
+</html>
