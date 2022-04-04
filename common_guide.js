@@ -1,13 +1,13 @@
-let a = document.querySelector(".tagParent");
+let parent = document.querySelector(".tagParent");
 
-for (let i = 0; i < a.length; i++) {
-  a[i].addEventListener("mouseover", function (e) {
+for (let i = 0; i < parent.length; i++) {
+  parent[i].addEventListener("mouseover", function (e) {
     if (e.target.children.length > 0) {
       e.target.children[0].style.opacity = "100";
     }
   });
 
-  a[i].addEventListener("mouseout", function (e) {
+  parent[i].addEventListener("mouseout", function (e) {
     if (e.target.children.length > 0) {
       e.target.children[0].style.opacity = "0";
     }
