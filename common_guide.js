@@ -15,7 +15,6 @@ for (let i = 0; i < a.length; i++) {
 }
 
 let dropdown = document.getElementsByClassName("Parent");
-
 let i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -32,6 +31,9 @@ for (i = 0; i < dropdown.length; i++) {
 let collectOpt = document.getElementsByClassName("SCROLL");
 for (i = 0; i < collectOpt.length; i++) {
   collectOpt[i].addEventListener("click", function (e) {
+    for (j = 0; j < collectOpt.length; j++) { 
+      collectOpt[j].style.color = ""
+    }
     e.target.style.color = "#8b82f1";
     const elemId = e.target.id;
     window.scrollTo(
